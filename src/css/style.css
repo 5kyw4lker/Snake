@@ -1,0 +1,131 @@
+
+html {
+    width: 100%;
+    height: 100%;
+    padding: 0; 
+    margin: 0;
+}
+  
+body {
+    padding: 0; 
+    margin: 0;
+    touch-action: none;
+    display: flex;
+    justify-content: center;
+}
+  
+#highscore {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 1%;  
+    width: 95%;
+    height: 5%;
+    border-radius: 1vw;
+  
+    box-shadow: 3px 3px 40px rgb(2,4,5);
+  
+    background: linear-gradient(183deg, #376b97, #399997, #359275, #8a8f35, #a04e32);
+    background-size: 1000% 1000%;
+    -webkit-animation: background_gradient 259s ease infinite;
+    -moz-animation: background_gradient 259s ease infinite;
+    animation: background_gradient 259s ease infinite;
+}
+  
+#akt-punkte {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 3vw;
+    color:#000;
+    font-family: 'Trebuchet MS', 'Arial', 'Helvetica', 'sans-serif';
+}
+  
+#rekord {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3vw;
+    color: #000;
+    font-family: 'Trebuchet MS', 'Arial', 'Helvetica', 'sans-serif';
+}
+  
+#canvas {
+    z-index: 2;
+    position: fixed;
+    top: 7%;
+  
+    box-shadow: 3px 3px 40px rgb(2,4,5);
+    border-radius: 1vw;
+  
+    background: linear-gradient(183deg, #376b97, #399997, #359275, #8a8f35, #a04e32);
+    background-size: 1000% 1000%;
+    -webkit-animation: background_gradient 259s ease infinite;
+    -moz-animation: background_gradient 259s ease infinite;
+    animation: background_gradient 259s ease infinite;
+}
+@-webkit-keyframes background_gradient {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes background_gradient {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes background_gradient {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+   
+#tasten-container {
+    z-index: 0;
+    position: fixed;
+    bottom: 1%;  
+    width: 95%;
+    max-height: 47%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+}
+  
+.einzeltasten {
+    z-index: 2;
+}
+  
+#taste4 {
+    grid-column: 1 / span 3;
+    grid-row: 3 / span 5;
+}
+  
+#taste2 {
+    grid-column: 4 / span 3;
+    grid-row: 1 / span 4;
+}
+  
+#taste8 {
+    grid-column: 4 / span 3;
+    grid-row: 6 / span 4;
+}
+  
+#taste6 {
+    grid-column: 7 / span 3;
+    grid-row: 3 / span 5;
+}
+  
+#img-tasten {
+    z-index: 1;
+    position: fixed;
+    bottom: 1%;  
+    width: 95%;
+    max-height: 47%;
+}
+  
+#bg-pic {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}  
